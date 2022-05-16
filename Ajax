@@ -1,1 +1,348 @@
+******************  index.html  ****************
 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----  <link rel="stylesheet" href="css/bootstrap.min.css"/>   -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">  -->
+    <script src="js/display_data.js"></script>
+    <script src="js/myscript.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <main class="mt-5 pt-3">
+        <div class="container">
+            <div class="container-fluid px-4">
+                <div class="row g-3 my-2">
+                    <div class="rounded">
+                        <div class="h1 my-4 text-center border">Add student form</div>
+                        <form id="studentForm">
+                            <div class="border p-3">
+                                <div class="row">
+                                    <div class="col-md-6 mt-md-3 mt-3">
+                                        <label>First Name</label>
+                                        <input type="text" id="firstName" class="form-control" required />
+                                    </div>
+                                    <div class="col-md-6 mt-md-3 mt-3">
+                                        <label>Last Name</label>
+                                        <input type="text" id="lastName" class="form-control" required />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mt-md-3 mt-3">
+                                        <label>Birth Date</label>
+                                        <input type="date" id="dob" class="form-control" required />
+                                    </div>
+                                    <div class="col-md-6 mt-md-3 mt-3">
+                                        <label>Gender</label>
+                                        <div class="d-flex align-items-center mt-2">
+                                            <label class="option">
+                                                <input type="radio" name="gender" value="Male" />
+                                                Male<span class="checkmarks"></span>
+                                            </label>
+                                            <label class="option ms-4">
+                                                <input type="radio" name="gender" value="Female" />
+                                                Female<span class="checkmarks"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mt-md-3 mt-3">
+                                        <label>Email</label>
+                                        <input type="email" id="email" class="form-control" required />
+                                    </div>
+                                    <div class="col-md-6 mt-md-3 mt-3">
+                                        <label>Phone Number</label>
+                                        <input type="tel" id="contactNo" class="form-control" required />
+                                    </div>
+                                </div>
+                                <div class="my-md-3 my-3">
+                                    <label>Branch</label>
+                                    <select id="sub" required>
+                                        <option value="" selected hidden>choose option</option>
+                                        <option value="Maths">IT</option>
+                                        <option value="Science">CSE</option>
+                                        <option value="Social">Mechanical</option>
+                                        <option value="Hindi">Civil</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mt-md-3 mt-3">
+                                        <label>Roll Number</label>
+                                        <input type="text" id="rollno" class="form-control" required />
+                                    </div>
+                                    <div class="col-md-6 mt-md-3 mt-3">
+                                        <label>Registration Date</label>
+                                        <input type="date" id="registrationDate" class="form-control" required />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mt-md-3 mt-3">
+                                        <label>Parent Name</label>
+                                        <input type="text" id="parentName" class="form-control" required />
+                                    </div>
+                                    <div class="col-md-6 mt-md-3 mt-3">
+                                        <label>Parent Mobile number</label>
+                                        <input type="text" id="parentMobileNo" class="form-control" required />
+                                    </div>
+                                </div>
+                                <div class="d-grid">
+                                    <button class="btn btn-primary btn-lg" id="btnAddStudent" type="button">
+                                        Add student
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--<script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>    
+<script src="display-data.js"></script>
+<script src="myscript.js"></script>   -->
+</body>
+
+</html>
+
+
+
+
+
+
+
+**********************  display-data.html  ***************
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/myscript.js"></script>
+    <script src="js/display_data.js"></script>
+    <title>Registration form-Display-Data</title>
+</head>
+<body>
+    <main class="mt-5 pt-3">
+     <div class="text-center">
+      <i class="bi bi-emoji-smile fs-1 text-primary"></i>
+     </div>
+     <div class="container">
+        <div class="h1 my-4 text-center border">Student Data</div>
+        <div class="row my-5">
+        <div class="card">
+        <div class="card-header fw-bolder h5 text-upperscase">
+        Roll NO: <span id="rollno">123</span>
+     </div>
+     <div class="card-body">
+        <h5 class="card-title fw-bold text-upperscase">
+         <span id="firstName">Komal</span>
+         <span id="lastName">Kalokhe</span>
+        </h5>
+        <small class="text-uppercase fw-bold text-muted">
+            Personal Information
+        </small>
+        <hr/>
+        
+        <p class="card-text fs-6 fw-bold">
+            <i class="bi bi-calendar-date me-2"></p></i>
+            Date of Birth: <span id="dob">08/05/1993</span>
+            </p>
+            <p class="card-text fs-6 fw-bold">
+                <i class="bi bi-people me-2"></p></i>
+                Email: <span id="email">komal@gmail.com</span>
+            </p>
+        <p class="card-text fs-6 fw-bold">
+            <i class="bi bi-people me-2"></p></i>
+            Gender: <span id="gender">Female</span>
+        </p>
+        <p class="card-text fs-6 fw-bold">
+            <i class="bi bi-people me-2"></p></i>
+            Phone number: <span id="contactNo">8765436546</span>
+        </p>
+        <small class="text-uppercase fw-bold text-muted">
+            College Information
+        </small>
+        <hr/>
+        <p class="card-text fs-6 fw-bold">
+        <i class="bi bi-book me-2"></p></i>
+        Branch: <span id="branch">IT</span>
+        </p>
+        <p class="card-text fs-6 fw-bold">
+        <i class="bi bi-book me-2"></p></i>
+        Rollno: <span id="rollno"></span>
+        </p>
+       
+        <p class="card-text fs-6 fw-bold">
+        <i class="bi bi-calendar-date me-2"></p></i>
+        Registration Date: <span id="registrationDate">9867465677</span>
+        </p>
+        <small class="text-uppercase fw-bold text-muted">
+            Parent Information
+        </small>
+        <hr/>
+        <p class="card-text fs-6 fw-bold">
+        <i class="bi bi-people me-2"></p></i>
+        Parent Name: <span id="parentName">ABC</span>
+        </p>
+        <p class="card-text fs-6 fw-bold">
+        <i class="bi bi-calendar-date me-2"></p></i>
+        Parent Mobile no: <span id="parentContactNo">7887373766</span>
+         </p>
+        </div>
+    </div>
+</div>
+</div>
+</main>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/jquery-3.5.1.js"></script>    
+<script src="display-data.js"></script>
+              
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+*************   myscript.js  ********************
+
+
+
+$(document).ready(function () {
+  // getData();
+
+  $("#btnAddStudent").click(function () {
+    //collect student data from student form
+    function getStudentData() {
+      let date = new Date($("#dob").val());
+      day = date.getDate();
+      month = date.getMonth() + 1; //jan - 0, feb-1, ...dec-11
+      year = date.getFullYear();
+      let dob = [day, month, year].join("/"); //28/01/2022
+
+      let selectedDate = new Date($("#registrationDate").val());
+      day = selectedDate.getDate();
+      month = date.getMonth() + 1;
+      year = date.getFullYear();
+      let registrationDate = [day, month, year].join("/");
+
+      let student = {
+        firstName: $("#firstName").val(),
+        lastName: $("#lastName").val(),
+        dob: dob,
+        gender: $("input[name='gender']:checked").val(),
+        email: $("#email").val(),
+        contactNo: $("#contactNo").val(),
+        branch: $("#sub").find(":selected").text(),
+        rollno: $("#rollno").val(),
+        registrationDate: registrationDate,
+        parentName: $("#parentName").val(),
+        parentMobileNo: $("#parentMobileNo").val(),
+      };
+      $("#studentForm")[0].reset();
+      return student;
+    }
+
+    //store student data to localStorage
+    function storeDataToLocalStorage() {
+      if (!localStorage.getItem("student")) {
+        localStorage.setItem("student", JSON.stringify(getStudentData()));
+      } else {
+        localStorage.removeItem("student");
+        localStorage.setItem("student", JSON.stringify(getStudentData()));
+      }
+    }
+
+    //send data to server with AJAX request
+    function sendData() {
+      let xhr = new XMLHttpRequest();
+      let data = JSON.stringify(getStudentData());
+      xhr.open("POST", "http://localhost:4000/storedata",true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.send(data);
+    }
+
+    //call storeDataToLocalStorage and sendData functions
+    storeDataToLocalStorage();
+    // sendData();
+      window.location.href="display-data.html"
+  });
+});
+
+// function getData() {
+//   let localStorageData = localStorage.getItem("student");
+//   let studentObj = JSON.parse(localStorageData);
+//   console.log(studentObj);
+//   $("#rollno").text(studentObj.rollno);
+//   $("#firstName").text(studentObj.firstName);
+//   $("#lastName").text(studentObj.lastName);
+//   $("#dob").text(studentObj.dob);
+//   $("#gender").text(studentObj.gender);
+//   $("#email").text(studentObj.email);
+//   $("#contactNo").text(studentObj.contactNo);
+//   $("#branch").text(studentObj.branch);
+//   $("#registrationDate").text(studentObj.registrationDate);
+//   $("#parentName").text(studentObj.parentName);
+//   $("#parentContactNo").text(studentObj.parentMobileNo);
+// }
+
+
+
+
+
+
+
+
+*****************   display_data.js   **************
+
+
+$(document).ready(function () {
+  getData();
+});
+
+function getData() {
+  let localStorageData = localStorage.getItem("student");
+  let studentObj = JSON.parse(localStorageData);
+  console.log(studentObj);
+  $("#rollno").text(studentObj.rollno);
+  $("#firstName").text(studentObj.firstName);
+  $("#lastName").text(studentObj.lastName);
+  $("#dob").text(studentObj.dob);
+  $("#gender").text(studentObj.gender);
+  $("#email").text(studentObj.email);
+  $("#contactNo").text(studentObj.contactNo);
+  $("#branch").text(studentObj.branch);
+  $("#rollno").text(studentObj.rollno);
+  $("#registrationDate").text(studentObj.registrationDate);
+  $("#parentName").text(studentObj.parentName);
+  $("#parentContactNo").text(studentObj.parentMobileNo);
+}
