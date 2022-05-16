@@ -131,7 +131,6 @@
 
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -155,12 +154,12 @@
         <div class="row my-5">
         <div class="card">
         <div class="card-header fw-bolder h5 text-upperscase">
-        Roll NO: <span id="rollno">123</span>
+        Roll NO: <span id="rollno">na</span>
      </div>
      <div class="card-body">
         <h5 class="card-title fw-bold text-upperscase">
-         <span id="firstName">Komal</span>
-         <span id="lastName">Kalokhe</span>
+         <span id="firstName">NA</span>
+         <span id="lastName">NA</span>
         </h5>
         <small class="text-uppercase fw-bold text-muted">
             Personal Information
@@ -169,19 +168,19 @@
         
         <p class="card-text fs-6 fw-bold">
             <i class="bi bi-calendar-date me-2"></p></i>
-            Date of Birth: <span id="dob">08/05/1993</span>
+            Date of Birth: <span id="dob">na/na/na</span>
             </p>
             <p class="card-text fs-6 fw-bold">
                 <i class="bi bi-people me-2"></p></i>
-                Email: <span id="email">komal@gmail.com</span>
+                Email: <span id="email">@gmail.com</span>
             </p>
         <p class="card-text fs-6 fw-bold">
             <i class="bi bi-people me-2"></p></i>
-            Gender: <span id="gender">Female</span>
+            Gender: <span id="gender">NA</span>
         </p>
         <p class="card-text fs-6 fw-bold">
             <i class="bi bi-people me-2"></p></i>
-            Phone number: <span id="contactNo">8765436546</span>
+            Phone number: <span id="contactNo">NA</span>
         </p>
         <small class="text-uppercase fw-bold text-muted">
             College Information
@@ -189,7 +188,7 @@
         <hr/>
         <p class="card-text fs-6 fw-bold">
         <i class="bi bi-book me-2"></p></i>
-        Branch: <span id="branch">IT</span>
+        Branch: <span id="branch">NA</span>
         </p>
         <p class="card-text fs-6 fw-bold">
         <i class="bi bi-book me-2"></p></i>
@@ -198,7 +197,7 @@
        
         <p class="card-text fs-6 fw-bold">
         <i class="bi bi-calendar-date me-2"></p></i>
-        Registration Date: <span id="registrationDate">9867465677</span>
+        Registration Date: <span id="registrationDate">NA</span>
         </p>
         <small class="text-uppercase fw-bold text-muted">
             Parent Information
@@ -206,11 +205,11 @@
         <hr/>
         <p class="card-text fs-6 fw-bold">
         <i class="bi bi-people me-2"></p></i>
-        Parent Name: <span id="parentName">ABC</span>
+        Parent Name: <span id="parentName">NA</span>
         </p>
         <p class="card-text fs-6 fw-bold">
         <i class="bi bi-calendar-date me-2"></p></i>
-        Parent Mobile no: <span id="parentContactNo">7887373766</span>
+        Parent Mobile no: <span id="parentContactNo">NA</span>
          </p>
         </div>
     </div>
@@ -223,9 +222,6 @@
               
 </body>
 </html>
-
-
-
 
 
 
